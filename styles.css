@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:hsl(212, 45%, 89%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  gap: 25%;
+  background-color: rgb(203, 208, 213);
+  width: 100%;
+}
+
+#header img {
+  width: 300px;
+  height: 34px;
+}
+
+#header ul {
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+}
+
+#header ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 9rem;
+}
+
+.title-and-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email,
+#submit {
+  margin-top: 2rem;
+  padding: 7px;
+  padding-right: 100px;
+}
+
+#submit {
+  padding-right: 5px;
+  background-color: rgb(246, 194, 24);
+  border: 0px;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+#features {
+  padding-left: 15%;
+}
+#premium-materials,
+#fast-shipping,
+#quality-assurance {
+  display: flex;
+  gap: 4rem;
+  padding-top: 5rem;
+  width: 80%;
+}
+
+#fast-shipping,
+#quality-assurance {
+  gap: 2.5rem;
+}
+
+i {
+  color: rgb(245, 139, 46);
+}
+
+#how-it-works {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#pricing {
+  display: flex;
+  gap: 3rem;
+}
+#pricing div {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+  height: 20rem;
+  width: 300px;
+  text-align: center;
+}
+
+.price-heading {
+  background-color: rgb(223, 216, 216);
+  padding: 1rem;
+}
+
+.price {
+  padding: 1rem;
+}
+
+.select {
+  background-color: rgb(246, 194, 24);
+  border: none;
+  padding: 0.8rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+#pricing li {
+  line-height: 2rem;
+}
+
+footer {
+  text-align: right;
+  margin-top: 2rem;
+  width: 100%;
+  line-height: 2rem;
+  background-color: rgb(203, 208, 213);
+  padding: 1rem 2rem 0.5rem 0rem;
+}
+footer ul {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #header {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1rem;
+  }
+
+  #header ul {
+    gap: 19%;
+  }
+
+  #pricing {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  #header ul {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    gap: 0px;
+  }
+
+  .content {
+    padding-top: 15rem;
+  }
+  .title-and-form {
+    width: 70%;
+  }
+  .title-and-form h2 {
+    text-align: center;
+  }
+
+  i {
+    display: none;
+    visibility: hidden;
+  }
+
+  #premium-materials,
+  #fast-shipping,
+  #quality-assurance {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 0px;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 1.7rem;
+    letter-spacing: 0.1rem;
+  }
+
+  #how-it-works iframe {
+    padding-top: 3rem;
+    width: 350px;
+  }
+  #pricing {
+    flex-direction: column;
+  }
+  footer li {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 320px) {
+  #how-it-works iframe {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  #header ul {
+    gap: 0px;
+  }
+
+  #pricing div {
+    width: 250px;
+  }
+  #pricing {
+    flex-direction: column;
+  }
+}
